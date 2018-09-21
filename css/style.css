@@ -81,12 +81,13 @@ li img {
     font-size: 13px;
 
     /* #4 #tab-bar buttons have a width of #one-third of the available space */
-    width: 33%;
+    width: 20%;
     height: 72px;
     padding: 16px;
 }
 
-/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
+/* #4 #tab-bar buttons do have a #line-break and images are centered
+due to the left&right auto margin */
 #tab-bar button img {
     display: block;
     margin: 0 auto 4px auto;
@@ -100,7 +101,8 @@ li img {
 
 
 /* MESSAGES */
-/* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
+/* #4 select #specific #messages by class and re-assign element styles
+according to their #hierarchy in a nested way */
 .message {
     /* #3 #chat #width*/
     width: 80%;
@@ -142,4 +144,3 @@ li img {
 .message.own {
     margin-left: 17.5%;
 }
-

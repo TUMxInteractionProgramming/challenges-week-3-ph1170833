@@ -5,47 +5,79 @@
     <title>chatter|app</title>
 
     <!-- #4 embed the #roboto #font. This needs to go above your css -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto"
+rel="stylesheet" />
 
     <!-- #4 #sweat out the styles by creating an #external css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <script src="js/main.js"></script>
 
-    
 </head>
 <body>
 <!-- #4 #one #page -->
 <div id="channels">
-    <h1>
-        <!-- #3 #channels #moocus the talkative duck-->
-        <img src="http://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus, the chatty duck!" style="height: 56px;">
+    <div class="appbars">
+    <h1 id="headapp">
+        
+            <!-- #3 #channels #moocus the talkative duck-->
+            <img src="http://ip.lfe.mw.tum.de/sections/moocus.png"
+            alt="Moocus, the chatty duck!" 
+            style="height: 40px; position: relative; left: 4px; top: 14px ;margin: auto;">
+       
         chatter|app
     </h1>
+    </div>
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
-    <ul>
-        <li>#Yummy
+    <ul id="channellist">
+        <li>
+        <button class="channelchange" onclick="switchChannel('Yummy')">       
+        #Yummy
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+            <img class="channel_meta" src="http://ip.lfe.mw.tum.de/sections/star-o.png"
+            alt="not starred">
+            <img class="channel_meta1" src="https://ip.lfe.mw.tum.de/sections/chevron-right.png"
+            alt="right chevron">
+        </button>
         </li>
 
         <!-- #4 #channel is #highlighted -->
         <li class="selected">
+     <button class="channelchange" onclick="switchChannel('SevenContinents')"> 
             #SevenContinents
             <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <img class="channel_meta" src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <img class="channel_meta1" src="https://ip.lfe.mw.tum.de/sections/chevron-right.png"
+            alt="right chevron">
+            </button>
         </li>
-        <li>#KillerApp
+        <li>
+        <button class="channelchange" onclick="switchChannel('KillerApp')"> 
+        #KillerApp
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-        </li>
-        <li>#FirstPersonOnMars
+            <img class="channel_meta" src="http://ip.lfe.mw.tum.de/sections/star-o.png"
+            alt="not starred">
+            <img class="channel_meta1" src="https://ip.lfe.mw.tum.de/sections/chevron-right.png"
+            alt="right chevron">
+        </button></li>
+        <li>
+   <button class="channelchange" onclick="switchChannel('FirstPersonOnMars')"> 
+        #FirstPersonOnMars
             <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <img class="channel_meta" src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <img class="channel_meta1" src="https://ip.lfe.mw.tum.de/sections/chevron-right.png"
+            alt="right chevron"> </button>
         </li>
-        <li>#Octoberfest
+        <li>
+        <button class="channelchange" onclick="switchChannel('Octoberfest')"> 
+        #Octoberfest
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-        </li>
+            <img class="channel_meta" src="http://ip.lfe.mw.tum.de/sections/star-o.png"
+            alt="not starred">
+            <img class="channel_meta1" src="https://ip.lfe.mw.tum.de/sections/chevron-right.png"
+            alt="right chevron">
+        </button></li>
     </ul>
 
     <!-- #3 #tab-bar #container -->
@@ -54,7 +86,8 @@
         <!-- #4 #tab-bar selected channel should be #highlighted -->
         <button class="selected">
             <!-- #3 #tab-bar #images -->
-            <img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb">
+            <img
+src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb">
             New
         </button>
         <button>
@@ -72,16 +105,19 @@
 
 <!-- #4 #one #page -->
 <div id="chat">
+    <div class="appbars">
     <h1>
-        #SevenContinents
+    #<span id="channelhead">SevenContinents</span>
         <small>by
             <strong>cheeses.yard.applies</strong>
         </small>
     </h1>
+    </div>
 
     <!-- #3 #chat #container -->
     <!-- #4 assign a #class to all your #messages to address them with css -->
-    <!-- #4 apply a class "own" to your #messages to align them separately with #margins -->
+    <!-- #4 apply a class "own" to your #messages to align them
+separately with #margins -->
     <div class="message own">
         <h3>
             <!-- #3 #chat #location points to w3w in a new tab -->
@@ -172,4 +208,5 @@
 </div>
 
 </body>
+
 </html>

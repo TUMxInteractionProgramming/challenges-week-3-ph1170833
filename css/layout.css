@@ -1,0 +1,72 @@
+/* #4 #sweat #external css file */
+/* for the layout structure, challenge 5 */
+
+#channels{
+    
+    position: absolute;
+    left:0;
+    top: 61px;
+    height:100%;
+    width:40%;
+}
+
+#chat{
+
+    position: absolute;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+}
+
+.appbars{
+
+
+    line-height: 60px;
+    font-size: 10px;
+    font-weight: normal;
+}
+/*
+#moocus{
+
+    position: relative;
+    left: 4px;
+    top: 4px;
+}*/
+
+#tab-bar{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+#headapp{
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 40%;
+}
+
+.channel_meta1{
+    
+    vertical-align: middle;
+    position: absolute;
+    right: 0px;
+}
+
+.channel_meta{
+    
+    vertical-align: middle;
+    position: absolute;
+    right: 16px;
+}
+
+#channelist{
+
+    overflow: auto;
+}
