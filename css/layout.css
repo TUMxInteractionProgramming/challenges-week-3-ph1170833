@@ -70,3 +70,8 @@
 
     overflow: auto;
 }
+
+#chat{
+
+    overflow-x: auto;
+}
